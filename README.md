@@ -5,7 +5,7 @@ Code for the HealthHelper project for HackGSU 2022.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/abigailnacional/flask-boilerplate.git
+   git clone https://github.com/abigailnacional/HealthHelper.git
    ```
 2. Navigate to the folder
    ```sh
@@ -22,5 +22,5 @@ Code for the HealthHelper project for HackGSU 2022.
 
 5. Type "localhost:5000" into your browser's URL bar and press enter.
 
-#Acknowledgements
+# Acknowledgements
 Flask boilerplate is from [here](https://github.com/abigailnacional/flask-boilerplate.git).
