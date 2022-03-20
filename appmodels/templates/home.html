@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .float-img{
+            float: right;
+            margin-right:10px;
+            margin-bottom:2px;
+            padding: 2px;
+            border: solid black 2px;
+        }
+    </style>
+</head>
+<body style="background-color: #ADD8E6;">
+    <header>
+        <div class="topnav">
+          <a href="{{ url_for('home') }}">HealthHelper</a>
+          <div style="float:right;">
+            <a class="active" href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('upload') }}">Upload Text</a>
+            <a href="{{ url_for('contact_us') }}">Contact Us</a>
+          </div>
+        </div>
+      </header>
+      <br>
+    <img src="https://www.memotext.com/wp-content/uploads/2020/07/mental-health-wellness-during-covid-19.jpg"height="500"
+            width="800" class="float-img" />
+
+    <p1>
+        Welcome to HealthHelper! We will help you to understand and critically evaluate
+        scientific/medical documents. Our app uses Google Cloud's Healthcare Natural Language API in order to analyze your articles. Navigate to the
+        Upload Text tab to get started. Upload no more than 10,000 characters at a time, and give some time for the system to process the text and to
+        find certain keywords.
+    </p1>
+
+
+    <div style="position: relative">
+        <p style="position: fixed; bottom: 0; width:100%; text-align: center">©2022 HealthHelper. All rights reserved.
+        </p>
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="upload.css">
+    <style>
+    </style>
+</head>
+<body style="background-color: #ADD8E6;">
+  <header>
+    <div class="topnav">
+      <a href="{{ url_for('home') }}">HealthHelper</a>
+      <div style="float:right;">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a class="active" href="{{ url_for('upload') }}">Upload Text</a>
+        <a href="{{ url_for('contact_us') }}">Contact Us</a>
+      </div>
+    </div>
+  </header>
+  <br>
+  <h1>Health Article Upload</h1>
+    <span style="display:inline-block; width: 3;"></span>
+      <div class="fields">
+        <h2><label>Article Input Form</label></h2>
+      </div>
+    <span style="display:inline-block; width: 6;"></span>
+    <div class="fields">
+            <textarea class="input-text"></textarea>
+    </div>
+    <div class="fields">
+      <h2><label>Article Output Form</label></h2>
+       </div>
+    <span style="display:inline-block; width: 6;"></span>
+    <textarea class="input-text"></textarea>
+  </div>
+<script>
+
+</script>
+<div style="position: relative">
+  <p style="position: fixed; bottom: 0; width:100%; text-align: center"> ©2022 HealthHelper. All rights reserved.
+  </p>
+</div>
+  </body>
+{% endblock %}

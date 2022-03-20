@@ -12,9 +12,19 @@ db = SQLAlchemy(app)
 sessionmaker = sqlalchemy.orm.sessionmaker(db.engine)
 
 @app.route("/")
-def index():
+def home():
      #request()
-     return render_template("index.html")
+     return render_template("home.html")
+
+@app.route("/upload")
+def upload():
+     #request()
+     return render_template("upload.html")
+
+@app.route("/contact_us")
+def contact_us():
+     #request()
+     return render_template("contact_us.html")
 
 #Make form for text intake
 
