@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#JSON cloud file
+healthhelper-344619-bc92be4ae82d.json
