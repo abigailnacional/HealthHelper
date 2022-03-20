@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+    </style>
+    </head>
+  
+      
+  </head>
+ <body style="background-color: #ADD8E6;">
+    
+  <header>
+    <div class="navigation">
+      <nav class="menu">
+        <a class="navigation__link" href="homepage.html">Home</a>
+        <a class="navigation__link" href="upload_article.html">Upload Article</a>
+        <a class="navigation__link" href="article_result.html">Article Results</a>
+        <a class="navigation__link" href="contact_us.html">Contact Us</a>
+      </nav>
+    </div>
+    
+    <h1>HealthHelper</h1>
+  </header>
+  <h1>
+        Health Article Upload
+    </h1>
+    <span style="display:inline-block; width: 3;"></span>
+    <h2>
+      <div class="fields">
+        <label>Article Input Form</label>    
+      </div>
+    </div>
+    <span style="display:inline-block; width: 6;"></span>
+    <div class="fields">
+            <textarea class="input-text"></textarea>
+    </div>
+  </div>
+    <div class="fields">
+      <label>Article Output Form</label>
+       </div>
+    <span style="display:inline-block; width: 6;"></span>
+    <textarea class="input-text"></textarea>
+  </div>
+<script>
+
+</script>
+</h2>
+  </body>
+</html>
