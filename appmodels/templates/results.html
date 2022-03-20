@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+        th, td {
+        padding: 15px;
+        }
+    </style>
+</head>
+<body style="background-color: #ADD8E6;">
+  <header>
+    <div class="topnav">
+      <a href="{{ url_for('home') }}">HealthHelper</a>
+      <div style="float:right;">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('upload') }}">Upload Text</a>
+        <a href="{{ url_for('contact_us') }}">Contact Us</a>
+      </div>
+    </div>
+  </header>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Entity Type</th>
+        <th scope="col">Entity Name</th>
+        <th scope="col">Temporal Assessment</th>
+        <th scope="col">Certainty Assessment</th>
+        <th scope="col">Subject</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for ent in entity_list%}
+        <tr>
+          <th scope="row">{{ent.med_type}}</th>
+          <td>{{ent.med_content}}</td>
+          <td>{{ent.med_time}}</td>
+          <td>{{ent.med_cert}}</td>
+          <td>{{ent.med_subj}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <br><br>
+<div style="position: relative">
+  <p style="bottom: 0; width:100%; text-align: center"> ©2022 HealthHelper. All rights reserved.
+  </p>
+</div>
+  </body>
+{% endblock %}
